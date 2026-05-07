@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Poke<span>dex</span></h1>
+
+  <div class="busca">
+    <input type="text" id="input" placeholder="Digite o nome ou número..." />
+    <button onclick="buscarPokemon()">Buscar</button>
+  </div>
+
+  <div id="erro" class="erro"></div>
+
+  <div id="card" class="card">
+    <img id="imagem" src="" alt="" />
+    <div class="info">
+      <span id="numero"></span>
+      <h2 id="nome"></h2>
+      <div id="tipos"></div>
+      <div id="stats"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
