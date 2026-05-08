@@ -72,7 +72,7 @@ https://pokeapi.co/api/v2/pokemon/{nome-ou-numero}
 
 ##  Preview
 
-<img src="Captura%20de%20tela%202026-05-07%20150805.png.png/imagem.jpg" alt="Descrição da imagem">
+<img src="./pokedex.png" width="500"/>
 
 ---
 
