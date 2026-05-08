@@ -3,27 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokedex</title>
+  <title>Pokédex</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Poke<span>dex</span></h1>
+  <header>
+    
+    <h1>Pokédex</h1>
+    <span class="tagline"> Conheça os Pokémons</span>
+  </header>
 
   <div class="busca">
-    <input type="text" id="input" placeholder="Digite o nome ou número..." />
+    <div class="busca-field">
+      <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="text" id="input" placeholder="nome ou número..."
+             autocomplete="off" onkeydown="if(event.key==='Enter')buscarPokemon()"/>
+    </div>
     <button onclick="buscarPokemon()">Buscar</button>
+  </div>
+
+  <div class="status-bar">
+    <div class="status-dot" id="statusDot"></div>
+    <span class="status-text" id="statusTxt">pronto</span>
+  </div>
+
+  <div class="suggestions">
+    <span class="sug-chip" onclick="buscarPor('pikachu')">pikachu</span>
+    <span class="sug-chip" onclick="buscarPor('charizard')">charizard</span>
+    <span class="sug-chip" onclick="buscarPor('mewtwo')">mewtwo</span>
+    <span class="sug-chip" onclick="buscarPor('gengar')">gengar</span>
+    <span class="sug-chip" onclick="buscarPor('eevee')">eevee</span>
   </div>
 
   <div id="erro" class="erro"></div>
 
   <div id="card" class="card">
-    <img id="imagem" src="" alt="" />
-    <div class="info">
-      <span id="numero"></span>
-      <h2 id="nome"></h2>
-      <div id="tipos"></div>
+    <div class="card-hero">
+      <div class="hero-layout">
+        <div class="poke-meta">
+          <span id="numero"></span>
+          <h2 id="nome"></h2>
+          <div id="tipos"></div>
+        </div>
+        <div class="poke-img-wrap">
+          <img id="imagem" src="" alt=""/>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="section-label">Base Stats</div>
       <div id="stats"></div>
+      <div class="divider"></div>
+      <div class="quick-row" id="quick"></div>
     </div>
   </div>
 
