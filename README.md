@@ -72,7 +72,7 @@ https://pokeapi.co/api/v2/pokemon/{nome-ou-numero}
 
 ##  Preview
 
-<img src="./pokedex.png" width="500"/>
+<img src="./Atualizado.png" width="500"/>
 
 ---
 
