@@ -32,7 +32,7 @@ Uma Pokédex interativa desenvolvida com HTML, CSS e JavaScript puro, que consom
 
 ---
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 Pokedex/
